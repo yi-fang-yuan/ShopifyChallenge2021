@@ -1,6 +1,7 @@
 
 ## Setup
 
+# Backend
 - Clone the repository and open the terminal and do the following:
 
 - Run `npm install` 
@@ -9,6 +10,7 @@
 
 - You should see by now that the server is up and running on PORT 500.
 
+# Frontend
 - Now do the following to run the frontend:
 
 - Run `cd views`
