@@ -1,17 +1,20 @@
-Clone the repository and open the terminal and do the following:
 
-`npm install`
+## Setup
 
-`node index.js`
+- Clone the repository and open the terminal and do the following:
 
-You should see by now that the server is up and running on PORT 500.
+- Run `npm install` 
 
-Now do the following to run the frontend:
+- Run `node index.js`
 
-`cd views`
+- You should see by now that the server is up and running on PORT 500.
 
-`npm install`
+- Now do the following to run the frontend:
 
-`yarn start`
+- Run `cd views`
 
-Now a browser should open up which allows you to upload images to a cloud repository.
+- Run `npm install`
+
+- Run `yarn start`
+
+- Now a browser should open up which allows you to upload images to a cloud repository.
