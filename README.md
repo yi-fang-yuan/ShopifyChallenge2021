@@ -1,3 +1,8 @@
+## Demo
+
+
+
+
 
 ## Setup
 
@@ -5,6 +10,11 @@
 - Clone the repository and open the terminal and do the following:
 
 - Run `npm install` 
+
+- Setup database by changing `.sample-env` to `.env` and add a mongodb url after `MONGO_URI` variable
+
+- Sign up to Cloudinary and fill the 3 other variables with the respective three fields given on the dashboard (`CLOUD_NAME`, `API_KEY`, `API_SECRET`)
+
 
 - Run `node index.js`
 
