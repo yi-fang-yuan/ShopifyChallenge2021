@@ -22,7 +22,7 @@ const Upload = () => {
       formData.append("desc", description);
         
       let res = await axios.post("/api/upload", formData);
-      window.location.reload(false);
+      // window.location.reload(false);
       setError(false);
       handleClose();
     } catch (error) {

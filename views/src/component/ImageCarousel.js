@@ -7,7 +7,7 @@ const ImageCarousel = () => {
 
   useEffect(() => {
     getImage();
-  }, []);
+  });
 
   const getImage = async () => {
     try {

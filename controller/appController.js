@@ -1,15 +1,17 @@
 const Image = require("../models/Image");
+
+//GET
 const getImages = async (req, res) => {
   try {
     let images = await Image.find({}, " -__v");
-    console.log("finding image")
-    console.log(images[0])
     return res.status(200).json({ images, msg: "image info fetched"    });
   } catch (error) {
     console.error(error);
       return res.status(500).json({ error: "some error occured" });
     }
     };
+
+// POST
 const uploadImage = async (req, res) => {
   try {
     if (req.file && req.file.path) {
@@ -28,7 +30,22 @@ return res.status(200).json({ msg: "image successfully saved" });
  return res.status(500).json({ error: "some error occured" });
   }
 };
+
+// DELETE
+const deleteImage = async (req, res) => {
+  try{
+    console.log(req.body)
+    await Image.deleteOne({url : req.body.url})
+    return res.status(200).json({ msg: "image successfully deleted"});
+  }
+  catch (error) 
+  {
+    return res.status(500).json({ error: "some error occured" });
+  }
+ 
+}
 module.exports = {
   getImages,
   uploadImage,
+  deleteImage
 };
