@@ -1,4 +1,5 @@
-
+## Demo
+- http://shopify-demo.surge.sh/
 
 ## Setup
 
